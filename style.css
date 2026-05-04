@@ -156,6 +156,40 @@ h1, h2, h3, .luxury-brand, .logo, .founder-name {
     box-shadow: 0 5px 25px rgba(212, 175, 55, 0.3);
 }
 
+/* Intro Ticker Tape */
+.ticker-wrap {
+    position: absolute; top: 0; left: 0; width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+    padding: 12px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 20;
+    backdrop-filter: blur(5px);
+}
+
+.ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: ticker 15s linear infinite;
+}
+
+.ticker-item {
+    display: inline-block;
+    padding: 0 3rem;
+    font-size: 0.85rem;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+@keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
 /* =========================================
    Luxury Dashboard View
    ========================================= */
@@ -304,6 +338,10 @@ h1, h2, h3, .luxury-brand, .logo, .founder-name {
         object-fit: contain;
         background-color: #000;
     }
+    
+    .ticker-item { font-size: 0.7rem; padding: 0 2rem; letter-spacing: 2px; }
+    .ticker-wrap { padding: 8px 0; }
+
     
     .ui-layer { bottom: 8%; width: 90%; }
     .luxury-outline-btn { padding: 12px 30px; font-size: 0.8rem; width: 100%; max-width: 300px; display: inline-block; box-sizing: border-box; }
