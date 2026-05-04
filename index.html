@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Eliko.uz | Eksklyuziv Erkaklar Kiyimlari</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Three.js for 3D Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <audio id="bg-music" loop>
+        <source src="music1.m4a" type="audio/mp4">
+    </audio>
+
+    <!-- Hypnotic 3D Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Luxury Landing Page -->
+    <div id="landing-page" class="landing-page">
+        <div class="landing-content">
+            <h1 class="luxury-brand hypnotic-fade-1">ELIKO.UZ</h1>
+            <h2 class="pre-title hypnotic-fade-2" style="font-size: 0.95rem; margin-bottom: 35px;">Premium Erkaklar Kiyim Do'koni</h2>
+            <div class="separator hypnotic-fade-3"></div>
+            <div class="btn-container hypnotic-fade-4">
+                <button id="start-btn" class="hypnotic-btn">
+                    <span class="btn-text">KIRISH</span>
+                    <div class="btn-glow"></div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Intro View (Videos) -->
+    <div id="intro-view" class="view hidden">
+        <video id="vid1" class="fullscreen-bg" playsinline muted preload="auto">
+            <source src="vidio1.mp4" type="video/mp4">
+        </video>
+        <video id="vid2" class="fullscreen-bg hidden" playsinline muted loop preload="none">
+            <source src="vidio2.mp4" type="video/mp4">
+        </video>
+        <div id="intro-ui" class="ui-layer hidden">
+            <a href="dashboard.html" id="go-dashboard-btn" class="luxury-outline-btn">
+                Vizitkaga O'tish <i class="fa-solid fa-chevron-right" style="margin-left: 8px; font-size: 0.8em;"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

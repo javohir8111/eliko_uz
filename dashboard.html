@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Eliko.uz | Premium Vizitka</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Dashboard / Vizitka View -->
+    <div id="dashboard-view" class="view luxury-view">
+        <div class="luxury-bg"></div>
+        <canvas id="bg-canvas"></canvas>
+
+        <nav class="dash-nav">
+            <div class="logo">ELIKO.UZ</div>
+            <a href="index.html" id="back-intro-btn" class="icon-btn"><i class="fa-solid fa-arrow-left"></i></a>
+        </nav>
+
+        <div class="luxury-card-container" id="card-container">
+            <div class="luxury-card" id="luxury-card">
+                <!-- Glossy overlay for 3D light reflection -->
+                <div class="glossy-overlay"></div>
+
+                <div class="luxury-card-content">
+                    
+                    <!-- 1. Store Focus Section (Top) -->
+                    <div class="store-section pop-out">
+                        <h1 class="store-brand">ELIKO.UZ</h1>
+                        <p class="store-subtitle">Premium Erkaklar Kiyim Do'koni</p>
+                    </div>
+
+                    <!-- 2. Store Socials (Prominent 3D Buttons) -->
+                    <div class="main-actions pop-out-more">
+                        <a href="https://instagram.com/eliko_uz" target="_blank" class="premium-btn instagram-metal">
+                            <div class="btn-content">
+                                <i class="fa-brands fa-instagram icon-large"></i>
+                                <div class="btn-text">
+                                    <span class="btn-title">Instagram</span>
+                                    <span class="btn-sub">@eliko_uz</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://t.me/eliko_6662" target="_blank" class="premium-btn telegram-metal">
+                            <div class="btn-content">
+                                <i class="fa-brands fa-telegram icon-large"></i>
+                                <div class="btn-text">
+                                    <span class="btn-title">Telegram</span>
+                                    <span class="btn-sub">@eliko_6662</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 3. Contact Numbers -->
+                    <div class="contact-section pop-out">
+                        <div class="phone-row">
+                            <a href="tel:+998774166662" class="glass-btn">
+                                <i class="fa-solid fa-phone"></i> +998 77 416 66 62
+                            </a>
+                            <a href="tel:+998976166662" class="glass-btn">
+                                <i class="fa-solid fa-phone"></i> +998 97 616 66 62
+                            </a>
+                        </div>
+                        <a href="https://yandex.com/maps/?pt=69.220142,41.290001&z=17" target="_blank" class="glass-btn map-btn">
+                            <i class="fa-solid fa-map-location-dot"></i> Xaritada Ko'rish
+                        </a>
+                    </div>
+
+                    <div class="luxury-divider pop-out">
+                        <div class="diamond"></div>
+                    </div>
+
+                    <!-- 4. Founder Section (Premium Mini Card) -->
+                    <div class="founder-premium-card pop-out">
+                        <div class="fp-header">
+                            <div class="fp-avatar">
+                                <img src="faunder.jpg" alt="Elyor Rahimov">
+                            </div>
+                            <div class="fp-title">
+                                <span class="fp-role">Eliko Brandi Asoschisi</span>
+                                <h2 class="fp-name">Elyor Rahimov</h2>
+                            </div>
+                        </div>
+                        <p class="fp-bio">Tadbirkor. Kiyim biznesida 3+ yillik tajribaga ega.</p>
+                        <a href="https://instagram.com/elyor_rahimboyev" target="_blank" class="fp-insta">
+                            <i class="fa-brands fa-instagram"></i> @elyor_rahimboyev
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
